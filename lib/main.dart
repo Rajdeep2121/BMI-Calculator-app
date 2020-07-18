@@ -39,25 +39,32 @@ class _HomeState extends State<Home> {
           children: <Widget>[
             Container(
               height: 100,
-              color: Colors.red[100],
+              // color: Colors.green[100],
               child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  Text(
-                    'Body Mass Index \nCalculator',
-                    style: TextStyle(
-                      fontFamily: 'ProximaNova',
-                      fontSize: 30,
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10, top: 20),
+                    child: Text(
+                      'Body Mass Index \nCalculator',
+                      style: TextStyle(
+                        fontFamily: 'ProximaNova',
+                        fontSize: 30,
+                      ),
                     ),
                   ),
-                  IconButton(
-                    icon: Icon(
-                      Icons.refresh,
-                      size: 30,
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10),
+                    child: IconButton(
+                      icon: Icon(
+                        Icons.refresh,
+                        size: 30,
+                      ),
+                      onPressed: () {
+                        Navigator.pushReplacementNamed(context, '/home');
+                      },
                     ),
-                    onPressed: () {
-                      Navigator.pushReplacementNamed(context, '/home');
-                    },
                   ),
                 ],
               ),
@@ -213,7 +220,7 @@ class _HomeState extends State<Home> {
                       color: Colors.grey[300],
                       boxShadow: <BoxShadow>[
                         BoxShadow(
-                          color: Colors.blue[900],
+                          color: Colors.teal[800],
                           offset: Offset(1, 1),
                           blurRadius: 20.0,
                         ),
