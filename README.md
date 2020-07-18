@@ -18,7 +18,7 @@ You can find the apk in the 'final app apk' folder.
 # Screenshots
 
 <p align='center'>
-    <img src='screenshots/3.jpg' height='500'>
-    <img src='screenshots/1.jpg' height='500'>
-    <img src='screenshots/2.jpg' height='500'>
+    <img src='snaps/3.jpg' height='500'>
+    <img src='snaps/1.jpg' height='500'>
+    <img src='snaps/2.jpg' height='500'>
 </p>
